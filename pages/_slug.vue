@@ -1,8 +1,10 @@
 <template>
   <section>
       <Navbar /> 
-    <h1>{{ post.fields.title }}</h1>
-    <div v-html="$md.render(post.fields.content)"></div>
+      <b-container fluid>
+        <h1>{{ post.fields.title }}</h1>
+        <div v-html="$md.render(post.fields.content)"></div>
+      </b-container>
   </section>
 </template>
 

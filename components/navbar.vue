@@ -1,6 +1,6 @@
 <template>
-    <b-row>
+    <b-container class="mx-auto">
         <NuxtLink to="/">Home</NuxtLink>
         <NuxtLink to="/blog">Blog</NuxtLink>
-    </b-row>
+    </b-container>
 </template>

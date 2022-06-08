@@ -1,16 +1,16 @@
 <template>
   <section>
-    <Navbar />
-    <div>
+    <b-container class="mx-auto text-center">
       <h1>Old Ranch</h1>
       <h6>Pull up...</h6>
-    </div>
+    </b-container>
   </section>
 </template>
 
 <script>
 import client from '~/plugins/contentful';
 import Navbar from '~/components/navbar.vue';
+
 export default {
     asyncData() {
         return client.getEntries({
@@ -21,6 +21,7 @@ export default {
         })
             .catch(e => console.log(e));
     },
-    components: { Navbar }
+    components: { Navbar },
+    layout: 'default'
 }
 </script>
