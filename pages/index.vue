@@ -22,6 +22,6 @@ export default {
             .catch(e => console.log(e));
     },
     components: { Navbar },
-    layout: 'default'
+    layout: 'home'
 }
 </script>

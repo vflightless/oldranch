@@ -1,18 +1,13 @@
-<template class="h-100">
-    <section class="d-block h-100 w-100" :style="{ backgroundImage: `url(${bgImage})`}" style="background-size: cover;" >
-        <b-container class="d-inline-block h-100">Get Fuqed</b-container>
-        <h1>Default</h1>
+<template>
+    <section>
+        <Navbar />
         <Nuxt />
     </section>
 </template>
 
 <script>
-import bgImg from "~/assets/chbg-upscale.png";
-
+import Navbar from '~/components/navbar.vue';
 export default {
-    layout: 'default',
-    data() {
-        return { bgImage: bgImg }
-    }
+    components: { Navbar }
 }
 </script>
