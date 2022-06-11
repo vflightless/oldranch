@@ -1,5 +1,5 @@
 <template> 
-    <section>
+    <section id="body-bg">
         <Navbar />
         <b-container style="height: 90vh;" fluid>
             <Nuxt />
@@ -15,3 +15,15 @@ export default {
     components: { Navbar },
 }
 </script>
+
+<style scope>
+  #body-bg {
+    height: 100vh;
+
+    background-image: url(~/assets/chbg-upscale.png);
+    background-color: #bdfdfc;
+    background-size: auto 100%;
+    background-position: center right;
+    background-repeat: no-repeat;
+  }
+</style>

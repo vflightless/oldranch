@@ -1,8 +1,7 @@
 <template>
   <b-row align-v="center" class="h-100" fluid>
     <b-col class="mx-auto text-center rounded text-dark">
-        <h1>Old Ranch</h1>
-        <h6>Pull up...</h6>
+        <h1>Pull up...</h1>
     </b-col>
   </b-row>
 </template>
@@ -24,10 +23,3 @@ export default {
     layout: 'home',
 }
 </script>
-<style>
-  body {
-    background-image: url(~/assets/chbg-upscale.png);
-    background-size: cover;
-  }
-
-</style>

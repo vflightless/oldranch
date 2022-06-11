@@ -22,7 +22,7 @@ export default ({
             return { posts: entries.items}
         }).catch(e => console.log(e))
     },
-
+    layout: "default",
 })
 
 </script>
