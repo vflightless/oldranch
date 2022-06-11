@@ -1,23 +1,15 @@
 <template>
-  <b-container  align-v="center" fluid>
-    <b-row style="height:100vh;" align-v="center">
-      <b-container class="mx-auto text-center bg-dark rounded text-white">
+  <b-row align-v="center" class="h-100" fluid>
+    <b-col class="mx-auto text-center rounded text-dark">
         <h1>Old Ranch</h1>
         <h6>Pull up...</h6>
-        <b-nav fill align="center">
-          <b-nav-item><NuxtLink to="/about">About</NuxtLink></b-nav-item>
-          <b-nav-item><NuxtLink to="/blog">Blog</NuxtLink></b-nav-item>
-        </b-nav>
-      </b-container>
-      
-    </b-row>
-  </b-container>
+    </b-col>
+  </b-row>
 </template>
 
 <script>
 import client from '~/plugins/contentful';
 import Navbar from '~/components/navbar.vue';
-import bgUrl from '~/assets/chbg-upscale.png';
 
 export default {
     asyncData() {
@@ -30,6 +22,12 @@ export default {
             .catch(e => console.log(e));
     },
     layout: 'home',
-    data() { return { bgUrl } },
 }
 </script>
+<style>
+  body {
+    background-image: url(~/assets/chbg-upscale.png);
+    background-size: cover;
+  }
+
+</style>

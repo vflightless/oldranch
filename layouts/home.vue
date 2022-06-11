@@ -1,14 +1,17 @@
-<template>
-    <section style="width: 100vw; height: 100vh; background-repeat: no-repeat; background-size: cover; background-position: right;" :style="{ backgroundImage: `url(${bgUrl})` }">
-        <Nuxt />
+<template> 
+    <section>
+        <Navbar />
+        <b-container style="height: 90vh;" fluid>
+            <Nuxt />
+        </b-container>
     </section>
 </template>
 
 <script>
-import bgUrl from '~/assets/chbg-upscale.png';
+import Navbar from '~/components/navbar.vue';
 
 export default {
     layout: 'home',
-    data() { return { bgUrl } },
+    components: { Navbar },
 }
 </script>

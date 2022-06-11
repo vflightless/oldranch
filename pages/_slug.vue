@@ -1,7 +1,9 @@
 <template>
   <section>
-      <b-container fluid>
+      <b-container class="mx-auto">
         <h1>{{ post.fields.title }}</h1>
+        <time v-html="(new Date(post.sys.createdAt)).toLocaleString('en-US', {dateStyle: 'medium', timeStyle: 'short'} )"></time>
+        <hr />
         <div v-html="$md.render(post.fields.content)"></div>
       </b-container>
   </section>

@@ -1,7 +1,7 @@
 <template>
     <section>
-        <b-container class="mx-auto" fluid>
-            Coming Soon...
+        <b-container class="mx-auto text-center" fluid>
+            More like why.<br />Coming soon...
         </b-container>
     </section>
 </template>
