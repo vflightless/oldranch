@@ -6,8 +6,8 @@
             </b-navbar-brand>
             <b-navbar-nav class="mx-auto" pills>
                 <b-nav fill align="center">
-                <NuxtLink to="/about"><b-nav-item>About</b-nav-item></NuxtLink>
-                <NuxtLink to="/blog"><b-nav-item>Blog</b-nav-item></NuxtLink>
+                <b-nav-item><NuxtLink to="/about">About</NuxtLink></b-nav-item>
+                <b-nav-item><NuxtLink to="/blog">Blog</NuxtLink></b-nav-item>
                 </b-nav>
             </b-navbar-nav>
         </b-navbar>

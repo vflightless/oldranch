@@ -1,10 +1,17 @@
 <template>
-  <section>
-    <b-container class="mx-auto text-center" fluid>
-      <h1>Old Ranch</h1>
-      <h6>Pull up...</h6>
-    </b-container>
-  </section>
+  <b-container  align-v="center" fluid>
+    <b-row style="height:100vh;" align-v="center">
+      <b-container class="mx-auto text-center bg-dark rounded text-white">
+        <h1>Old Ranch</h1>
+        <h6>Pull up...</h6>
+        <b-nav fill align="center">
+          <b-nav-item><NuxtLink to="/about">About</NuxtLink></b-nav-item>
+          <b-nav-item><NuxtLink to="/blog">Blog</NuxtLink></b-nav-item>
+        </b-nav>
+      </b-container>
+      
+    </b-row>
+  </b-container>
 </template>
 
 <script>
@@ -22,7 +29,6 @@ export default {
         })
             .catch(e => console.log(e));
     },
-    components: { Navbar },
     layout: 'home',
     data() { return { bgUrl } },
 }

@@ -4,7 +4,7 @@
             <h4>Latest Posts</h4>
             <hr />
             <div v-for="(post, index) in posts" :key="index">
-                <time v-html="(new Date(post.sys.createdAt)).toLocaleDateString()"></time> - <NuxtLink :to="post.fields.slug">{{ post.fields.title }}</NuxtLink>
+                <time v-html="(new Date(post.sys.createdAt)).toLocaleString('en-US', {dateStyle: 'medium', timeStyle: 'short'} )"></time> - <NuxtLink :to="post.fields.slug">{{ post.fields.title }}</NuxtLink>
             </div>
         </b-container>
     </section>
